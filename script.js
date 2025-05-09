@@ -1,3 +1,4 @@
+// Dados do quiz
 const questions = [
     {
         question: "Qual a importância da psicopedagogia no desenvolvimento infantil?",
@@ -57,7 +58,7 @@ function login() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    if (username === "admin" && password === "admin123") {
+    if (username === "Admin" && password === "123") {
         isAdmin = true;
         loginContainer.style.display = 'none';
         adminContainer.style.display = 'block';
