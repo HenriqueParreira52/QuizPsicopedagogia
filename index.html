@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Psicopedagogia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-container" class="login-container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Nome de usuário">
+        <input type="password" id="password" placeholder="Senha">
+        <button onclick="login()">Entrar</button>
+        <p id="error-message" class="error-message"></p>
+    </div>
+
+    <div id="quiz-container" class="quiz-container" style="display: none;">
+        <h1>Quiz Psicopedagogia</h1>
+        <div id="timer-container">
+            <div id="timer-bar"></div>
+        </div>
+        <div class="question-container">
+            <p id="question">Pergunta aparecerá aqui</p>
+            <div class="options">
+                <!-- Opções serão inseridas aqui pelo JavaScript -->
+            </div>
+        </div>
+        <button id="next-button" onclick="nextQuestion()" disabled>Próxima Pergunta</button>
+        <div id="result" class="result" style="display: none;">
+            <h2>Quiz Finalizado!</h2>
+            <p id="score"></p>
+            <button onclick="restartQuiz()">Reiniciar Quiz</button>
+        </div>
+    </div>
+
+    <div id="admin-container" class="admin-container" style="display: none;">
+        <h2>Pódio dos Jogadores</h2>
+        <ul id="leaderboard">
+            <!-- O pódio será preenchido aqui -->
+        </ul>
+        <button onclick="logout()">Sair</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
